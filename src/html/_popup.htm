@@ -1,0 +1,60 @@
+<div id="contact-form" class="contact-form popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content contact-form__content">
+			<div class="contact-form__header">
+				<button data-close type="button" class="popup__close modal-close-btn"></button>
+			</div>
+			<h3 class="contact-form__title" id="simple-request-title">
+				<span class="lang-option" data-lang="ua">Заповнiть форму i спецiалiст зв’яжеться з Вами</span>
+				<span class="lang-option" data-lang="ru">ru</span>
+				<span class="lang-option" data-lang="en">en</span>
+			</h3>
+			<h3 class="contact-form__title" id="package-request-title">
+				<span class="lang-option" data-lang="ua">Ви обрали <mark>тариф {{packageName}} {{period}} {{monthMap:{"3":"місяця","6":"місяців","12":"місяців"}}}</mark>. Заповнiть форму i спецiалiст зв’яжеться з Вами</span>
+				<span class="lang-option" data-lang="ru">ru</span>
+				<span class="lang-option" data-lang="en">en</span>
+			</h3>
+			<div class="contact-form__row">
+				<div class="contact-form__column">
+					<div class="contact-form__img-wrapper">
+						<img src="@img/request-form/contacts.png" alt="contacts.png" class="contact-form__img">
+					</div>
+				
+				</div>
+				<form name="contact" action="" class="contact-form__column">
+					<div class="contact-form__field form-field">
+						<span class="form-field__error"></span>
+						<span class="lang-src" data-lang="ua" data-lang-src="ph-contacts-name">Ваше ім'я</span>
+						<span class="lang-src" data-lang="ru" data-lang-src="ph-contacts-name">ru</span>
+						<span class="lang-src" data-lang="en" data-lang-src="ph-contacts-name">eng</span>
+						<input type="text" name="name" required class="form-field__input" data-placeholder-src="ph-contacts-name">
+					</div>
+					<div class="contact-form__field form-field">
+						<span class="form-field__error"></span>
+						<span class="lang-src" data-lang="ua" data-lang-src="ph-contacts-phone">Ваш номер телефону</span>
+						<span class="lang-src" data-lang="ru" data-lang-src="ph-contacts-phone">ru</span>
+						<span class="lang-src" data-lang="en" data-lang-src="ph-contacts-phone">eng</span>
+						<input type="tel" name="phone" required class="form-field__input" data-placeholder-src="ph-contacts-phone">
+					</div>
+					<div class="contact-form__field form-field">
+						<span class="form-field__error"></span>
+						<span class="lang-src" data-lang="ua" data-lang-src="ph-contacts-comment">Kоментар</span>
+						<span class="lang-src" data-lang="ru" data-lang-src="ph-contacts-comment">ru</span>
+						<span class="lang-src" data-lang="en" data-lang-src="ph-contacts-comment">eng</span>
+						<textarea name="comment" class="form-field__input" data-placeholder-src="ph-contacts-comment"></textarea>
+					</div>
+					<button type="submit" class="contact-form__btn btn btn_shadowed">
+						<span class="lang-option" data-lang="ua">Hадіслати</span>
+						<span class="lang-option" data-lang="ru">ru</span>
+						<span class="lang-option" data-lang="en">en</span>
+					</button>
+					<div class="contact-form__msg">
+						<span class="lang-option" data-lang="ua">Заявка успішно відправлена! Менеджер зв'яжеться з Вами</span>
+						<span class="lang-option" data-lang="ru">ru</span>
+						<span class="lang-option" data-lang="en">en</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

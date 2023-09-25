@@ -1,0 +1,76 @@
+.geography {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: rem(35);
+		padding-bottom: rem(35);
+	}
+	&__title {
+		margin-bottom: rem(30);
+	}
+	&__body {
+		width: 100%;
+	}
+	&__map {
+		margin-bottom: rem(30);
+		@media screen and (max-width: $mbpMobile) {
+			margin-left: rem(-30);
+			margin-right: rem(-30);
+		}
+	}
+	&__map-img {
+		width: 100%;
+		@media screen and (max-width: $mbpMobile) {
+			width: 130%;
+		}
+	}
+	&__footer {
+	}
+}
+.img-view {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__body {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-bottom: rem(30);
+		overflow: hidden;
+		z-index: 0;
+	}
+	&__img-wrapper {
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+	&__img {
+		width: 100%;
+	}
+	&__horizontal-scroll {
+		width: 80%;
+		min-width: 80%;
+		height: rem(20);
+		border-radius: rem(20);
+		background-color: $--ultraLightBlue;
+	}
+	&__horizontal-scroll-thumb {
+		position: relative;
+		left: 0;
+		top: 0;
+		height: 100%;
+		min-width: rem(50);
+		border-radius: rem(20);
+		background-color: $--lightBlue;
+	}
+}
+.scheme {
+	&__request-btn {
+	}
+}
+.btn {
+	&_shadowed {
+	}
+}

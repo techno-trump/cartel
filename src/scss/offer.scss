@@ -1,0 +1,13 @@
+.offer {
+	&__container {
+		margin-top: rem(-70);
+		margin-bottom: rem(35);
+		@media screen and (max-width: $mbpTablet) {
+			margin-top: rem(-200);
+		}
+		@media screen and (max-width: $mbpMobile) {
+			margin-top: rem(-370);
+			margin-bottom: rem(25);
+		}
+	}
+}

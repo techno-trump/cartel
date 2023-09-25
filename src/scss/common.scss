@@ -1,0 +1,149 @@
+// Заголовки, общие БЄМ блоки и проче...
+[data-lang] {
+	display: none;
+}
+html[lang="ua"] .lang-option[data-lang="ua"],
+html[lang="ru"] .lang-option[data-lang="ru"],
+html[lang="en"] .lang-option[data-lang="en"],
+.lang-option[data-lang="any"] {
+	display: inline;
+}
+
+.btn {
+	font-size: rem(18);
+	font-weight: 700;
+	line-height: rem(20.68);
+	letter-spacing: 0em;
+	color: $--white;
+	background-color: $--mainBlue;
+	border: rem(1.8) solid $--mainBlue;
+	border-radius: rem(37);
+	padding: rem(18) rem(32);
+	&:hover {
+		border-color: $--green;
+		background-color: $--green;
+	}
+	&_shadowed {
+		box-shadow: 0px 0px rem(18) 0px $--btnDarkShadow;
+	}
+	&_thin {
+		font-size: rem(16);
+		line-height: rem(18.38);
+		padding: rem(12) rem(24);
+		&:hover {
+			color: $--green;
+		}
+	}
+	&_bright {
+		color: $--darkBlue;
+		background-color: $--extraLightBlue;
+		border-color: $--extraLightBlue;
+		&:hover {
+			background-color: $--extraLightBlue;
+			border-color: $--extraLightBlue;
+			color: $--green;
+		}
+	}
+	&_clear {
+		color: $--mainBlue;
+		background-color: $--white;
+		&:hover {
+			background-color: $--white;
+			color: $--green;
+		}
+	}
+}
+.section-title {
+	font-size: rem(38);
+	font-weight: 700;
+	line-height: rem(44);
+	letter-spacing: 0em;
+	text-align: left;
+	@media screen and (max-width: $mbpMobile) {
+		font-size: rem(28);
+		line-height: rem(32);
+	}
+}
+button {
+	transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+svg {
+	transition: fill 0.3s, stroke 0.3s, transform 0.3s;
+}
+.lang-src {
+	display: none;
+}
+a:hover {
+	color:$--mainBlue;
+	transition: color 0.3s;
+}
+.modal-close-btn {
+	position: relative;
+	display: inline-block;
+	width: rem(20);
+	height: rem(20);
+	@media screen and (max-width: $mbpMobile) {
+		width: rem(30);
+		height: rem(30);
+	}
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: $--red;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		margin: auto;
+		transform: rotate(45deg);
+		transition: transform 0.3s;
+	}
+	&:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: $--red;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		margin: auto;
+		transform: rotate(-45deg);
+		transition: transform 0.3s;
+	}
+	&:hover::before {
+		transform: rotate(135deg);
+	}
+	&:hover::after {
+		transform: rotate(45deg);
+	}
+}
+
+.form-field {
+	&__error {
+		display: none;
+	}
+	&__input {
+		width: 100%;
+		font-size: rem(18);
+		line-height: rem(22);
+		background-color: $--inputBg;
+		border-radius: rem(8);
+		padding: rem(14) rem(20);
+		outline: none;
+		&::placeholder {
+			color: $--placeholder;
+		}
+	}
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  background-color: initial;
+}

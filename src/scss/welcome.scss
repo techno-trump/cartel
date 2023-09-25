@@ -1,0 +1,97 @@
+.welcome {
+	background-color: $--lightGray;
+	background-image: url("@img/welcome/bg.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: rem(1204) auto;
+	@media screen and (min-width: $mbpContainer) and (max-width: $mbpDesign) {
+		background-position: right aval(-360, 0, 0, $mbpContainerNu) bottom;
+	}
+	@media screen and (max-width: $mbpContainer) {
+		background-position: right rem(-360) bottom;
+	}
+	@media screen and (max-width: $mbpTablet) {
+		background-size: rem(1060) auto;
+	}
+	@media screen and (max-width: $mbpMobile) {
+		background-size: rem(960) auto;
+		background-position: right rem(-360) bottom rem(120);
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding-top: rem(215);
+		@media screen and (max-width: $mbpTablet) {
+			padding-bottom: rem(80);
+		}
+		@media screen and (max-width: $mbpMobile) {
+			padding-bottom: rem(220);
+		}
+		@media screen and (min-width: $mbpSmallMobile) and (max-width: $mbpDesign) {
+			padding-top: aval(100, 215);
+		}
+		@media screen and (max-width: $mbpSmallMobile) {
+			padding-top: rem(100);
+		}
+	}
+	&__main-block {
+		flex: 0 1 rem(563);
+		display: flex;
+		flex-direction: column;
+		// @media screen and (min-width: $mbpSmallMobile) and (max-width: $mbpMobile) {
+		// 	flex-basis: aval(254, 563, 0, $mbpSmallMobileNu, $mbpMobileNu);
+		// }
+		// @media screen and (max-width: $mbpSmallMobile) {
+		// 	flex-basis: rem(254);
+		// }
+	}
+	&__title {
+		font-size: rem(64);
+		font-weight: 700;
+		line-height: rem(73.54);
+		margin-bottom: rem(32);
+		@media screen and (min-width: $mbpSmallMobile) and (max-width: $mbpMobile) {
+			font-size: aval(30, 64, 0, $mbpSmallMobileNu, $mbpMobileNu);
+			line-height: aval(34.47, 73.54, 0, $mbpSmallMobileNu, $mbpMobileNu);
+		}
+		@media screen and (max-width: $mbpSmallMobile) {
+			font-size: rem(30);
+			line-height: rem(34.47);
+		}
+	}
+	&__subtitle {
+		font-size: rem(20);
+		font-weight: 400;
+		line-height: rem(28);
+		margin-bottom: rem(40);
+	}
+	&__request-btn {
+		align-self: flex-start;
+		margin-bottom: rem(222);
+	}
+	&__decoration {
+		display: flex;
+		align-items: flex-end;
+		margin-left: rem(-280);
+		margin-right: rem(-316);
+		@media screen and (max-width: $mbpTablet) {
+			margin-top: rem(50);
+		}
+		@media screen and (max-width: $mbpMobile) {
+			margin-left: rem(-200);
+			margin-top: rem(100);
+		}
+		@media screen and (max-width: 730px) {
+			display: none;
+		}
+	}
+	&__img {
+		max-width: rem(800);
+		@media screen and (max-width: $mbpTablet) {
+			max-width: rem(720);
+		}
+		@media screen and (max-width: $mbpMobile) {
+			max-width: rem(640);
+		}
+	}
+}

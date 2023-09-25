@@ -1,0 +1,81 @@
+<section class="contacts">
+	<div class="contacts__container">
+		<div class="contacts__title section-title">
+			<span class="lang-option" data-lang="ua">Нашi контакти</span>
+			<span class="lang-option" data-lang="ru">ru</span>
+			<span class="lang-option" data-lang="en">eng</span>
+		</div>
+		<div class="contacts__body">
+			<div class="contacts__column">
+				<img src="@img/contacts/contacts.png" alt="contacts.png" class="contacts__img">
+			</div>
+			<div class="contacts__column">
+				<div class="contacts__card contacts-card">
+					<div class="contacts-card__inner">
+						<ul class="contacts-card__list">
+							<li class="contacts-card__item">
+								<a href="tel:+380 (67) 783 70 43" class="contacts-card__item-link">
+									<svg class="contacts-card__item-link-icon" viewbox="0 0 21 22">
+										<use xlink:href='@img/icons/icons.svg#calling'></use>
+									</svg>
+									<span class="contacts-card__item-link-text">+380 (67) 783 70 43</span>
+								</a>
+							</li>
+							<li class="contacts-card__item">
+								<a href="mailto:cartelgmb@gmail.com" class="contacts-card__item-link">
+									<svg class="contacts-card__item-link-icon" viewbox="0 0 25 24">
+										<use xlink:href='@img/icons/icons.svg#message'></use>
+									</svg>
+									<span class="contacts-card__item-link-text">cartelgmb@gmail.com</span>
+								</a>
+							</li>
+							<li class="contacts-card__item">
+								<a href="https://goo.gl/maps/2imPkiUbu61bfdNY9" target="_blank" class="contacts-card__item-link">
+									<svg class="contacts-card__item-link-icon" viewbox="0 0 25 24">
+										<use xlink:href='@img/icons/icons.svg#location'></use>
+									</svg>
+									<span class="contacts-card__item-link-text">
+										<span class="lang-option" data-lang="ua">Луцк, Шопена 22/41</span>
+										<span class="lang-option" data-lang="ru">ru</span>
+										<span class="lang-option" data-lang="en">eng</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<form name="callback" action="" class="contacts-card__callback-form" autocomplete="true">
+							<h4 class="contacts-card__callback-form-title">
+								<span class="lang-option" data-lang="ua">Заповнiть форму i ми зв’яжемося з Вами</span>
+								<span class="lang-option" data-lang="ru">ru</span>
+								<span class="lang-option" data-lang="en">eng</span>
+							</h4>
+							<div class="contacts-card__callback-form-field form-field">
+								<span class="contacts-card__callback-form-field-error form-field__error"></span>
+								<span class="lang-src" data-lang="ua" data-lang-src="ph-contacts-name">Ваше ім'я</span>
+								<span class="lang-src" data-lang="ru" data-lang-src="ph-contacts-name">ru</span>
+								<span class="lang-src" data-lang="en" data-lang-src="ph-contacts-name">eng</span>
+								<input type="text" name="name" required class="contacts-card__callback-form-field-input form-field__input" data-placeholder-src="ph-contacts-name">
+							</div>
+							<div class="contacts-card__callback-form-field form-field">
+								<span class="contacts-card__callback-form-field-error form-field__error"></span>
+								<span class="lang-src" data-lang="ua" data-lang-src="ph-contacts-phone">Ваш номер телефону</span>
+								<span class="lang-src" data-lang="ru" data-lang-src="ph-contacts-phone">ru</span>
+								<span class="lang-src" data-lang="en" data-lang-src="ph-contacts-phone">eng</span>
+								<input type="tel" pattern="^\+?\d{10,12}" name="phone" required class="contacts-card__callback-form-field-input form-field__input" data-placeholder-src="ph-contacts-phone">
+							</div>
+							<button type="submit" class="contacts-card__callback-form-btn btn btn_shadowed">
+								<span class="lang-option" data-lang="ua">Hадіслати</span>
+								<span class="lang-option" data-lang="ru">ru</span>
+								<span class="lang-option" data-lang="en">en</span>
+							</button>
+							<div class="contacts-card__callback-form-msg">
+								<span class="lang-option" data-lang="ua">Заявка успішно відправлена! Менеджер зв'яжеться з Вами</span>
+								<span class="lang-option" data-lang="ru">ru</span>
+								<span class="lang-option" data-lang="en">en</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

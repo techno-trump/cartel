@@ -1,0 +1,92 @@
+.advantages-card {
+	border-radius: rem(20);
+	background-color: $--white;
+	box-shadow: 0px rem(17) rem(82) 0px $--mediumShadow;
+	padding: rem(40) rem(50);
+	&_blue {
+		color: $--white;
+		background: linear-gradient(9.45deg, #1777FB 1.58%, #4795FF 86.89%);
+	}
+	@media screen and (max-width: $mbpMobile) {
+		padding: rem(20) rem(30);
+	}
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: rem(1) solid $--additionGray;
+		padding-bottom: rem(30);
+	}
+	&_blue &__header {
+		border-bottom: rem(1) solid rgba($color: $--additionGray, $alpha: 0.45);
+	}
+	&__title {
+	}
+	
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: rem(-20) rem(-33);
+		padding-top: rem(30);
+		margin-bottom: rem(30);
+		overflow: hidden;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@media screen and (max-width: $mbpTablet) {
+			padding: rem(-20) rem(-30);
+		}
+	}
+	&__column {
+		flex: 1 0 calc(100% / 3);
+		display: flex;
+		flex-direction: column;
+		padding: rem(20) rem(33);
+		@media screen and (max-width: $mbpTablet) {
+			flex-basis: calc(100% / 2);
+			padding: rem(20) rem(30);
+		}
+		@media screen and (max-width: 610px) {
+			flex-basis: 100%;
+		}
+		&_s25p {
+			flex-basis: 25%;
+			@media screen and (max-width: 1100px) {
+				flex-basis: 50%;
+			}
+			@media screen and (max-width: $mbpMobile) {
+				flex-basis: 100%;
+			}
+		}
+	}
+	&__column-header {
+	}
+	&__column-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: rem(62);
+		height: rem(62);
+		background-color: $--extraLightBlue;
+		border-radius: 50%;
+		margin-bottom: rem(20);
+		& > img {
+			display: inline-block;
+			max-width: rem(28);
+			height:  rem(28);
+		}
+	}
+	&_blue &__column-icon {
+		background-color: rgba($color: $--extraLightBlue, $alpha: 0.63);
+	}
+	&__column-title {
+		font-size: rem(22);
+		font-weight: 700;
+		line-height: rem(25.28);
+		margin-bottom: rem(10);
+	}
+	&__column-body {
+		font-size: rem(18);
+		line-height: rem(24);
+	}
+}

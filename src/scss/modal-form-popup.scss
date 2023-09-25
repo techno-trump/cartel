@@ -1,0 +1,90 @@
+
+.contact-form {
+	&__content {
+		background-color: $--white;
+		padding: rem(30);
+		@media screen and (max-width: $mbpMobile) {
+			padding: rem(10);
+		}
+	}
+	&__header {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: rem(30);
+		@media screen and (max-width: $mbpMobile) {
+			padding: rem(10) rem(10) 0;
+		}
+	}
+	&__title {
+		display: none;
+		font-size: rem(22);
+		font-weight: 700;
+		line-height: rem(25.28);
+		letter-spacing: 0em;
+		margin-bottom: rem(24);
+		text-align: center;
+		& mark {
+			color: $--mainBlue;
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		max-width: rem(810);
+		margin: 0 auto;
+	}
+	&__column {
+		&:first-child {
+			flex: 0 1 rem(300);
+			align-items: center;
+			margin-right: rem(29);
+			@media screen and (max-width: $mbpMobile) {
+				display: none;
+			}
+		}
+		&:last-child {
+			display: flex;
+			max-width: rem(483);
+			flex-direction: column;
+			margin: 0 auto;
+		}
+	}
+	&__img {
+	}
+	
+	&__field {
+		margin-bottom: rem(20);
+		&:nth-child(3) {
+			margin-bottom: rem(30);
+		}
+	}
+	&__btn {
+		align-self: center;
+		padding: rem(18) rem(40);
+	}
+	&__msg {
+		max-height: 0;
+		align-self: center;
+		font-size: rem(18);
+		line-height: rem(22);
+		text-align: center;
+		color: $--green;
+		transition: max-height 0.3s;
+		overflow: hidden;
+		&.show {
+			padding: rem(15) 0;
+			max-height: rem(80);
+		}
+	}
+	&[data-type="audit-request"] #simple-request-title, 
+	&[data-type="package-request"] #package-request-title {
+		display: block;
+	}
+}
+#simple-request-title {
+	text-align: right;
+	color: $--mainBlue;
+	@media screen and (max-width: $mbpMobile) {
+		text-align: center;
+	}
+}

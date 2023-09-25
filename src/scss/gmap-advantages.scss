@@ -1,0 +1,118 @@
+.gmap-advantages {
+	&__container {
+		padding-top: rem(35);
+		padding-bottom: rem(35);
+		@media screen and (max-width: $mbpMobile) {
+			padding-top: rem(25);
+			padding-bottom: rem(25);
+		}
+	}
+	&__body {
+		display: flex;
+		@media screen and (max-width: $mbpMobile) {
+			flex-wrap: wrap;
+		}
+	}
+	&__column {
+		flex: 0 1 auto;
+		display: flex;
+		flex-direction: column;
+		&:first-child {
+			flex: 0 0 rem(482);
+			align-items: flex-start;
+			padding-top: rem(63);
+			margin-right: rem(128);
+			@media screen and (max-width: $mbpTablet) {
+				margin-right: rem(60);
+				flex: 0 0 rem(455);
+			}
+			@media screen and (max-width: 850px) {
+				margin-right: rem(45);
+			}
+			@media screen and (max-width: $mbpMobile) {
+				flex: 0 1 100%;
+				padding-top: 0;
+				padding-left: rem(20);
+				padding-right: rem(20);
+				margin-right: 0;
+			}
+			@media screen and (max-width: 500px) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		&:last-child {
+			@media screen and (max-width: $mbpContainer) {
+				align-self: center;
+			}
+			@media screen and (max-width: $mbpMobile) {
+				flex-basis: 100%;
+			}
+		}
+	}
+	&__title {
+		margin-bottom: rem(32);
+		@media screen and (max-width: $mbpMobile) {
+			margin-bottom: rem(20);
+		}
+	}
+	&__list {
+		margin: rem(-8) 0;
+		margin-bottom: rem(40);
+		margin-right: rem(52);
+		@media screen and (max-width: $mbpMobile) {
+			margin-right: 0;
+			margin-bottom: rem(30);
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		font-size: rem(18);
+		font-weight: 400;
+		line-height: rem(26);
+		letter-spacing: -0.01em;
+		padding: rem(8) 0;
+		&:before {
+			content: "";
+			display: inline-block;
+			min-width: rem(20);
+			min-height: rem(20);
+			background-image: url("@img/gmap-advantages/list-arrow.svg");
+			background-repeat: no-repeat;
+			background-color: rgba($color: $--lightGreen, $alpha: 0.4);
+			background-position: center;
+			background-size: rem(8.87) rem(6.5);
+			border-radius: rem(6);
+			margin-right: rem(20);
+		}
+	}
+	&__request-btn {
+		margin-bottom: rem(63);
+		@media screen and (max-width: $mbpTablet) {
+			margin-bottom: rem(70);
+		}
+		@media screen and (max-width: $mbpMobile) {
+			margin-bottom: rem(40);
+		}
+		@media screen and (max-width: 500px) {
+			align-self: center;
+		}
+	}
+	&__img-wrapper {
+		max-width: 100%;
+		@media screen and (max-width: $mbpMobile) {
+			max-width: 80%;
+			margin: 0 auto;
+		}
+		& img, & section {
+			width: 100%;
+		}
+	}
+}
+.section-title {
+}
+.lang-option {
+}
+.btn {
+}

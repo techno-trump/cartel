@@ -1,0 +1,177 @@
+//====================================================================================================
+.footer {
+	background-color: $--footerBg;
+	&__container {
+		padding-top: rem(30);
+		padding-bottom: rem(20);
+		@media screen and (max-width: $mbpMobile) {
+		}
+	}
+	&__main {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: auto auto;
+		grid-template-areas: "main-nav subscribe" "pages-nav subscribe";
+		margin-bottom: rem(40);
+		@media screen and (max-width: $mbpContainer) {
+			grid-template-rows: auto auto auto;
+			grid-template-columns: auto;
+			grid-template-areas: "main-nav" "subscribe" "pages-nav";
+			justify-items: center;
+		}
+		@media screen and (max-width: $mbpMobile) {
+			margin-bottom: rem(30);
+		}
+	}
+	&__main-nav-area {
+		grid-area: main-nav;
+		display: flex;
+		@media screen and (max-width: $mbpContainer) {
+			margin-bottom: rem(30);
+		}
+		@media screen and (max-width: $mbpMobile) {
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: rem(30);
+		}
+	}
+	&__logo {
+		width: rem(98);
+		margin-right: rem(40);
+		@media screen and (max-width: $mbpMobile) {
+			margin-right: 0;
+			margin-bottom: rem(30);
+		}
+	}
+	&__main-nav-list {
+		@media screen and (max-width: $mbpMobile) {
+			margin: rem(-10) rem(-14);
+			justify-content: center;
+		}
+	}
+	&__main-nav-item {
+		@media screen and (max-width: $mbpMobile) {
+			margin: rem(10) rem(14);
+		}
+	}
+	&__pages-nav-area {
+		grid-area: pages-nav;
+
+	}
+	&__subscribe-area {
+		grid-area: subscribe;
+		justify-self: end;
+		@media screen and (max-width: $mbpContainer) {
+			justify-self: center;
+			margin-bottom: rem(20);
+		}
+		@media screen and (max-width: $mbpMobile) {
+			
+		}
+	}
+	&__copyright {
+		text-align: center;
+		font-size: rem(16);
+		line-height: rem(18.38);
+	}
+}
+.pages-nav {
+	display: flex;
+	//align-items: flex-end;
+	margin: rem(-14) rem(-14);
+	@media screen and (max-width: $mbpMobile) {
+		flex-direction: column;
+		align-items: center;
+		margin: rem(-10) rem(-10);
+	}
+	&__item {
+		margin: rem(14) rem(14);
+		@media screen and (max-width: $mbpMobile) {
+			margin: rem(10) rem(10);
+		}
+	}
+	&__link {
+		font-size: rem(18);
+		line-height: rem(21);
+		letter-spacing: 0em;
+		text-align: center;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+}
+.subscribe {
+	&__title {
+		font-size: rem(18);
+		font-weight: 500;
+		line-height: rem(20.68);
+		letter-spacing: 0em;
+		color: $--mainBlue;
+		margin-bottom: rem(16);
+	}
+	&__controls {
+		display: flex;
+		margin-bottom: rem(10);
+		@media screen and (max-width: $mbpSmallMobile) {
+			flex-direction: column;
+		}
+	}
+	&__error {
+		display: none;
+	}
+	&__input {
+		font-size: rem(16);
+		line-height: rem(18.38);
+		letter-spacing: 0em;
+		background-color: $--white;
+		border-radius: rem(8) 0 0 rem(8);
+		outline: none;
+		padding: rem(12) rem(20);
+		&::placeholder {
+			color: $--placeholder;
+		}
+		@media screen and (max-width: $mbpMobile) {
+			//max-width: rem(183);
+			max-width: 100%;
+		}
+		@media screen and (max-width: $mbpSmallMobile) {
+			border-radius: rem(8) rem(8) 0 0;
+		}
+	}
+	&__msg {
+		font-size: rem(18);
+		line-height: rem(22);
+		letter-spacing: 0em;
+		color: $--green;
+		transition: opacity 0.3s;
+		opacity: 0;
+		&.show {
+			opacity: 1;
+		}
+	}
+	&__btn {
+		font-size: rem(18);
+		font-weight: 500;
+		line-height: rem(20.68);
+		letter-spacing: 0em;
+		color: $--mainBlue;
+		background-color: $--white;
+		border: rem(1.6) solid $--mainBlue;
+		border-radius: 0 rem(8) rem(8) 0;
+		padding: rem(10) rem(32);
+		@media screen and (max-width: $mbpMobile) {
+			font-size: rem(16);
+			line-height: rem(18.38);
+			padding: rem(12) rem(16);
+		}
+		@media screen and (max-width: $mbpSmallMobile) {
+			border-radius: 0 0 rem(8) rem(8);
+		}
+		&:hover {
+			border-color: $--green;
+			color: $--green;
+		}
+	}
+}
+//====================================================================================================

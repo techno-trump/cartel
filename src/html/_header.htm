@@ -1,0 +1,50 @@
+<header class="header">
+	<div class="header__container">
+		<div class="header__left-area">
+			<a href="." class="main-logo header__logo">
+				<figure class="main-logo__fig">
+					<img src="@img/main-logo.svg" alt="main-logo.svg" class="main-logo__img">
+				</figure>
+			</a>
+			<nav class="header__menu main-nav" data-drawer-owner="main-nav">
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><button type="button" class="main-nav__btn" data-scroll-to="faq">
+							<span class="lang-option" data-lang="any">FAQ</span>
+						</button></li>
+						<li class="main-nav__item"><button type="button" class="main-nav__btn" data-scroll-to="packages">
+							<span class="lang-option" data-lang="ua">Тарифи</span>
+							<span class="lang-option" data-lang="ru">Тарифи</span>
+							<span class="lang-option" data-lang="en">Тарифи</span>
+						</button></li>
+						<li class="main-nav__item"><button type="button" class="main-nav__btn" data-scroll-to="geography">
+							<span class="lang-option" data-lang="ua">Наша географія</span>
+							<span class="lang-option" data-lang="ru">Наша географія</span>
+							<span class="lang-option" data-lang="en">Наша географія</span>
+						</button></li>
+						<li class="main-nav__item"><button type="button" class="main-nav__btn" data-scroll-to="contacts">
+							<span class="lang-option" data-lang="ua">Контакти</span>
+							<span class="lang-option" data-lang="ru">Контакти</span>
+							<span class="lang-option" data-lang="en">Контакти</span>
+						</button></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="header__right-area">		
+			<select name="lang-select" id="lang-select" class="header__lang-select lang-select">
+				<option value="ua" class="lang-select__option">UA</option>
+				<option value="ru" class="lang-select__option">RU</option>
+				<option value="en" class="lang-select__option">ENG</option>
+			</select>
+			<button class="header__request-btn btn btn_thin btn_bright"  data-audit-request>
+				<span class="lang-option" data-lang="ua">Безкоштовний аудит</span>
+				<span class="lang-option" data-lang="ru">Безкоштовний аудит</span>
+				<span class="lang-option" data-lang="en">Безкоштовний аудит</span>
+			</button>
+			<div class="header__burger-btn burger-btn" data-drawer-open="main-nav">
+				<span></span><span></span><span></span><span></span>
+			</div>
+		</div>
+	</div>
+</header>

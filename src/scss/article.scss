@@ -1,0 +1,68 @@
+.article {
+	&__container {
+		padding-top: rem(92);
+		padding-bottom: rem(70);
+	}
+	&__title {
+		font-size: rem(38);
+		font-weight: 700;
+		line-height: rem(44);
+		letter-spacing: 0em;
+		text-align: center;
+		margin-bottom: rem(30);
+		@media screen and (min-width: $mbpSmallMobile) and (max-width: $mbpDesign) {
+			font-size: aval(20, 38);
+			line-height: aval(24, 44);
+		}
+		@media screen and (max-width: $mbpSmallMobile) {
+			font-size: rem(20);
+			line-height: rem(24);
+		}
+	}
+	&__subtitle {
+		font-size: rem(22);
+		font-weight: 700;
+		line-height: rem(25.28);
+		margin-bottom: rem(30);
+		@media screen and (min-width: $mbpSmallMobile) and (max-width: $mbpDesign) {
+			font-size: aval(18, 22);
+			line-height: aval(20, 25.28);
+		}
+		@media screen and (max-width: $mbpSmallMobile) {
+			font-size: rem(18);
+			line-height: rem(20);
+		}
+	}
+	&__block {
+		margin-bottom: rem(30);
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__block-title {
+		font-size: rem(22);
+		font-weight: 700;
+		line-height: rem(25.28);
+		margin-bottom: rem(20);	
+		@media screen and (min-width: $mbpSmallMobile) and (max-width: $mbpDesign) {
+			font-size: aval(18, 22);
+			line-height: aval(20, 25.28);
+		}
+		@media screen and (max-width: $mbpSmallMobile) {
+			font-size: rem(18);
+			line-height: rem(20);
+		}
+	}
+	&__block-text {
+		font-size: rem(18);
+		line-height: rem(24);
+		@media screen and (min-width: $mbpSmallMobile) and (max-width: $mbpDesign) {
+			font-size: aval(16, 18);
+			line-height: aval(18, 24);
+		}
+		@media screen and (max-width: $mbpSmallMobile) {
+			font-size: rem(16);
+			line-height: rem(18);
+		}
+	}
+}
